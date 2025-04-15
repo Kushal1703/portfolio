@@ -1,0 +1,72 @@
+/* chat.css */
+
+#chat-bubble {
+  position: fixed;
+  bottom: 30px;
+  left: 30px; /* ← move it to bottom left */
+  width: 60px;
+  height: 60px;
+  background-color: #ffc107;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+#chat-box {
+  position: fixed;
+  bottom: 100px;
+  left: 30px; /* ← move it along with the bubble */
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  z-index: 9998;
+  display: none;
+}
+
+
+  
+  #chat-header {
+    background-color: #ffc107;
+    border-radius: 10px;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  #chat-messages {
+    max-height: 400px; /* limit height */
+    overflow-y: auto;  /* enable vertical scrolling */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  
+  #chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #eee;
+  }
+  
+  #user-input {
+    flex-grow: 1;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  #chat-input button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

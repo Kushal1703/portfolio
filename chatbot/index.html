@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat with Kushal Bot</title>
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+  <!-- Chat Bubble -->
+  <div id="chat-bubble" onclick="toggleChat()">💬</div>
+
+  <!-- Chat Box -->
+  <div id="chat-box">
+    <div id="chat-header">Chat with Kushal Bot ✨</div>
+    <div id="chat-messages"></div>
+    <div id="chat-input">
+      <input type="text" id="user-input" placeholder="Type your message..." />
+      <button onclick="sendMessage()">➤</button>
+    </div>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+</html>
